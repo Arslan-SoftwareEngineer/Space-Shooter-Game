@@ -71,23 +71,23 @@ To compile and run this project on an **Ubuntu** environment, you will need the 
 
 ### 🐧 Linux
 
-**1. Install SFML Dependencies
+**1. Install SFML Dependencies**
 Open your terminal and run:
 ```bash
 sudo apt-get update
 sudo apt-get install libsfml-dev
 ```
-**2. Clone the Repository
+**2. Clone the Repository**
 ```bash
 git clone [https://github.com/Arslan-SoftwareEngineer/Space-Shooter-Game.git](https://github.com/Arslan-SoftwareEngineer/Space-Shooter-Game.git)
 cd Space-Shooter-Game
 ```
-**3. Compile the Code
+**3. Compile the Code**
 Compile the project by linking the necessary SFML modules:
 ```bash
 g++ main.cpp -o SpaceShooter -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ```
-**4. Run the Game
+**4. Run the Game**
 ```bash
 ./SpaceShooter
 ```
