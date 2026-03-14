@@ -65,9 +65,9 @@ g++ main.cpp -o SpaceShooter -lsfml-graphics -lsfml-window -lsfml-system -lsfml-
 ```bash
 ./SpaceShooter
 ```
-## 📁 Directory Structure [cite: 34]
+## 📁 Directory Structure
 
-Ensure your local repository contains the following structure for assets to load correctly: [cite: 35]
+Ensure your local repository contains the following structure for assets to load correctly:
 
 ```text
 Space-Shooter-Game/
