@@ -41,27 +41,53 @@ A robust **2D arcade space shooter** developed in **C++** using the **SFML** (Si
 
 ---
 
-## 🐧 Installation & Compilation (Ubuntu)
+## Installation & Compilation (Windows/Ubuntu)
+
+### 🪟 Windows
+To compile on Windows, you can use **MinGW** (Command Line) or **Visual Studio**.
+
+**Option A: MinGW (Command Line)**
+1. Download and install the GCC/MinGW version of [SFML](https://www.sfml-dev.org/download.php).
+2. Clone the repository via Git Bash or Command Prompt.
+3. Compile the code (replace `C:\SFML` with your actual SFML path):
+```cmd
+g++ main.cpp -I"C:\SFML\include" -L"C:\SFML\lib" -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -o SpaceShooter.exe
+```
+4. Copy all `.dll` files from the SFML `bin` folder into your game's directory.
+5. Run the game:
+```cmd
+SpaceShooter.exe
+```
+
+**Option B: Visual Studio**
+1. Download the Visual C++ version of [SFML](https://www.sfml-dev.org/download.php).
+2. Clone the repository and create a new C++ Empty Project in Visual Studio.
+3. Add `main.cpp` and other source/header files to the project.
+4. In **Project Properties**, set the **Include Directories** to `SFML\include` and **Library Directories** to `SFML\lib`.
+5. Under **Linker > Input > Additional Dependencies**, add: `sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;`.
+6. Copy the `.dll` files from `SFML\bin` to your project's output/debug folder and run the game.
 
 To compile and run this project on an **Ubuntu** environment, you will need the SFML development libraries.
 
-### 1. Install SFML Dependencies
+### 🐧 Linux
+
+** 1. Install SFML Dependencies
 Open your terminal and run:
 ```bash
 sudo apt-get update
 sudo apt-get install libsfml-dev
 ```
-### 2. Clone the Repository
+** 2. Clone the Repository
 ```bash
 git clone [https://github.com/Arslan-SoftwareEngineer/Space-Shooter-Game.git](https://github.com/Arslan-SoftwareEngineer/Space-Shooter-Game.git)
 cd Space-Shooter-Game
 ```
-### 3. Compile the Code
+** 3. Compile the Code
 Compile the project by linking the necessary SFML modules:
 ```bash
 g++ main.cpp -o SpaceShooter -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ```
-### 4. Run the Game
+** 4. Run the Game
 ```bash
 ./SpaceShooter
 ```
